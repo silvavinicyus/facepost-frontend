@@ -1,0 +1,109 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  
+  background: var(--gray-600);
+}
+
+.header {
+  height: 11.3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-700);
+}
+
+.inputContainer {  
+  width: 46rem;
+  height: 3.375rem;  
+  margin-top: calc(0px - 3.375rem / 2);  
+}
+
+.inputContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer input {
+  width: 39.875rem;
+  height: 3.375rem;  
+  border: 1px solid var(--gray-700);  
+  background: var(--gray-500);
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  padding-left: 1rem;
+  color: var(--gray-100);
+}
+
+.inputContainer button {
+  width: 5.625rem;
+  height: 3.375rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-dark);
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+}
+
+.inputContainer button:hover {
+  background: var(--blue);
+  color: var(--white);
+  transition: background 0.25s;
+  cursor: pointer;
+}
+
+.inputContainer input:focus {  
+  border: 1px solid var(--purple);
+}
+
+.mainContainer {
+  width: 46rem;  
+  padding-top: 3.5rem;  
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.mainContainer header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasksCreated span:first-child {
+  color: var(--blue);
+  margin-right: 0.4rem;
+}
+
+.tasksCreated span:nth-child(2) {  
+  background: var(--gray-500);
+  color: var(--gray-200);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+}
+
+.tasksFinished span:first-child {
+  color: var(--purple);
+  margin-right: 0.4rem;
+}
+
+.tasksFinished span:nth-child(2) {
+  background: var(--gray-500);
+  color: var(--gray-200);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.75rem;    
+}
+
